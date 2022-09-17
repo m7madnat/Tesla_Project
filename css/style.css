@@ -233,13 +233,25 @@ body::-webkit-scrollbar {
     margin-top: auto;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: center;    
+    animation-name: footer;
+    animation-duration: 2.5s;    
+
+}
+
+@keyframes footer {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        transform: translateY(-350px);
+    }
 }
 
 .hero-footer__badges {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
 }
 
 .hero-footer-badge{
@@ -308,9 +320,25 @@ body::-webkit-scrollbar {
     padding-bottom: 80px;
 }
 
+.bottom-arrow-btn2 {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: -95%;
+}
+
 .bottom-btn__link {
     text-decoration: none;
     color: var(--prim-color-white);
+}
+.bottom-btn__link2 {
+    text-decoration: none;
+    color: black;
+}
+.bottom-btn__link2 i {
+    animation-name: arrow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
 
 .bottom-btn__link i {
